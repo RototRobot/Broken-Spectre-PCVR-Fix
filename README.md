@@ -18,9 +18,6 @@ frame, and then locks up — the view welded to your face, nothing responding.
 That is not a bug. It is three deliberate vendor gates stacked on top of each other, plus one
 genuine hardware gap. This fixes all four.
 
-> [!NOTE]
-> This mod was made with heavy AI (Claude) assistance. I want to be upfront about that.
-
 ---
 
 ## Contents
