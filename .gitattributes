@@ -1,0 +1,18 @@
+# Normalise line endings so the repo is consistent regardless of platform
+* text=auto eol=lf
+
+# Windows-only scripts keep CRLF
+*.ps1   text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+
+# Treat sources as text
+*.cs    text diff=csharp
+*.md    text
+*.json  text
+
+# Binaries, should any ever be added
+*.dll   binary
+*.png   binary
+*.jpg   binary
+*.zip   binary

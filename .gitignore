@@ -1,0 +1,36 @@
+# Build output
+build/
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# Never commit game or vendor binaries
+**/OVRPlugin.dll
+**/OVRPlugin.dll.orig
+**/Assembly-CSharp.dll
+**/Oculus.VR.dll
+BepInEx/
+winhttp.dll
+doorstop_config.ini
+.doorstop_version
+
+# Logs captured while debugging
+*.log
+LogOutput.log
+Player.log
+ovrlogs/
+*.asm
+
+# Editor / OS
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+desktop.ini
+
+# Release staging output (attach to GitHub Releases, do not commit)
+dist/

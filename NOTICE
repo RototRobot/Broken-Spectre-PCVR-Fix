@@ -1,0 +1,53 @@
+﻿Broken Spectre PCVR Fix
+Copyright 2026 Grimciri
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+
+This repository contains NO third-party binaries. (The optional `-with-BepInEx` release
+archive does redistribute BepInEx unmodified; it carries all four third-party license texts
+and a THIRD-PARTY.md manifest.) It contains only original
+source code, build scripts and documentation. The following components are
+required at build or run time and must be obtained by the user from their
+original sources:
+
+  BepInEx 5 (LGPL-2.1)                 https://github.com/BepInEx/BepInEx
+    Mod loader. Bundles HarmonyX and MonoMod. Not redistributed here; the
+    README links to the official release.
+
+  HarmonyX (MIT)                       https://github.com/BepInEx/HarmonyX
+    Runtime patching library, shipped inside BepInEx as 0Harmony.dll.
+
+  Mono.Cecil (MIT)                     https://github.com/jbevain/cecil
+    Used only during research to read the game's IL. Not required to build
+    or run this mod.
+
+--------------------------------------------------------------------------------
+Not included, and deliberately so
+--------------------------------------------------------------------------------
+
+  OVRPlugin.dll and the Meta XR SDK are proprietary to Meta Platforms, Inc.
+  No Meta binary is redistributed here. tools/Patch-OVRPlugin.ps1 modifies a
+  single byte of the copy already present in the user's own game install, and
+  can revert it.
+
+  Broken Spectre and its assemblies are property of Stitch Media. No game
+  files are redistributed. The plugin is compiled against the user's own
+  installed copy.
+
+Broken Spectre is a trademark of its respective owner. This project is an
+unofficial, unaffiliated compatibility fix and is not endorsed by Stitch Media,
+Meta Platforms, Valve, or HP.
